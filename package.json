@@ -1,0 +1,10 @@
+{
+  "name": "MindYourPattern",
+  "version": "1.0.0",
+  "description": "JS Design Patterns",
+  "scripts": {
+    "constructor": "node constructor.js"
+  },
+  "author": "S. M. Hasan Mansur",
+  "license": "MIT"
+}
