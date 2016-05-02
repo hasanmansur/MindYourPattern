@@ -1,4 +1,4 @@
-console.log("::::::::::::::: Basic Constructor Pattern :::::::::::::::::::");
+::::::::::::::: Basic Constructor Pattern :::::::::::::::::::
 
 function car(model, year, miles) {
     this.model = model;
@@ -15,7 +15,7 @@ var bluebird = new car("Nissan Bluebird", 2010, 5000);
 console.log(civic.toString());
 console.log(bluebird.toString());
 
-console.log(":::::::::::::::: Constructors With Prototypes ::::::::::::::::");
+:::::::::::::::: Constructors With Prototypes ::::::::::::::::
 
 function Car(model, year, miles) {
   this.model = model;

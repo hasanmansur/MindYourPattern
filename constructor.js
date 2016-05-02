@@ -1,6 +1,5 @@
 var fs = require("fs");
 var data = fs.readFileSync("./txt/constructor.txt");
-console.log("--------------------------------------------------CODE-------------------------------------------------");
 console.log(data.toString());
 console.log("-------------------------------------------------OUTPUT------------------------------------------------");
 console.log("::::::::::::::: Basic Constructor Pattern :::::::::::::::::::");
