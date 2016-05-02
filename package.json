@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "JS Design Patterns",
   "scripts": {
-    "constructor": "node constructor.js"
+    "constructor": "node constructor.js",
+    "module": "node module.js"
   },
   "author": "S. M. Hasan Mansur",
   "license": "MIT"

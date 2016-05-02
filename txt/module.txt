@@ -1,7 +1,9 @@
-var fs = require("fs");
-var data = fs.readFileSync("./txt/module.txt");
-console.log(data.toString());
-console.log("-------------------------------------------------OUTPUT------------------------------------------------");
+/*
+-------------------------------------- Module Pattern -------------------------------------------
+In JavaScript, the Module pattern is used to further emulate the concept of classes in such a way that we're able to include 
+both public/private methods and variables inside a single object, thus shielding particular parts from the global scope.
+*/
+
 
 var basketModule = (function () {
     // private members
@@ -42,4 +44,3 @@ basketModule.add({name: "mango", price: 100});
 basketModule.add({name: "grape", price: 200});
 basketModule.itemCount();
 basketModule.totalPrice();
-
