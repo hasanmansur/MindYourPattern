@@ -1,0 +1,51 @@
+--------------------------------- Prototype Pattern -----------------------------------------------------
+
+We can think of the prototype pattern as being based on prototypal inheritance where we create objects 
+which act as prototypes for other objects.
+
+Real prototypal inheritance, as defined in the ECMAScript 5 standard, requires the use of Object.create. 
+
+Object.create also allows us to easily implement advanced concepts such as differential inheritance where 
+objects are able to directly inherit from other objects. 
+
+
+:::::::::::::::: Inheritance ::::::::::::::
+
+var car = {
+	model: "ford",
+	drive: function () {
+		console.log("get set go!!!");
+	},
+	stop: function () {
+		console.log("crazy driving!");
+	}
+}
+
+var mycar = Object.create(car);
+console.log(mycar.model);
+mycar.drive();
+mycar.stop();
+
+::::::::: Differential Inheritance :::::::::
+
+var Car = {
+	model: "audi",
+	drive: function () {
+		console.log("lets go!!!");
+	},
+	stop: function () {
+		console.log("amazing driving!");
+	},
+	welcome: function () {
+		console.log("hey " + this.owner);
+	}
+}
+
+var myCar = Object.create(Car, {
+	"owner": { value: "hasan"}
+});
+console.log(myCar.model);
+myCar.drive();
+myCar.stop();
+console.log(myCar.owner);
+myCar.welcome();

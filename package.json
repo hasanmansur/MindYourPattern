@@ -4,7 +4,8 @@
   "description": "JS Design Patterns",
   "scripts": {
     "constructor": "node constructor.js",
-    "module": "node module.js"
+    "module": "node module.js",
+	"prototype": "node prototype.js"
   },
   "author": "S. M. Hasan Mansur",
   "license": "MIT"
