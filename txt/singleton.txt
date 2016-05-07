@@ -1,0 +1,38 @@
+/*
+-----------------------------------------------Singleton Pattern--------------------------------------------------
+There must be exactly one instance of a class, and it must be accessible to clients from a well-known access point.
+*/
+
+function Singleton () {
+    var instance;
+    function init () {
+        var privateMsg = "welcome";
+        var privateRandomNumber = Math.random();
+        var privateGetMsg = function () {
+            return privateMsg;
+        }
+        var privateGetRandomNumber = function () {
+            return privateRandomNumber;
+        }
+        return {
+            getMsg: privateGetMsg,
+            getRandomNumber: privateGetRandomNumber
+        }
+    }
+    return {
+        getInstance: function () {
+            if (!instance) {
+                instance = init();
+            }
+            return instance;
+        }
+    }
+}
+
+var mySingleton = Singleton();
+var singletonObjectA = mySingleton.getInstance();
+var singletonObjectB = mySingleton.getInstance();
+console.log(singletonObjectA.getMsg());
+console.log(singletonObjectA.getRandomNumber());
+console.log(singletonObjectB.getMsg());
+console.log(singletonObjectB.getRandomNumber());

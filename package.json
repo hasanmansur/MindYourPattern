@@ -5,7 +5,8 @@
   "scripts": {
     "constructor": "node constructor.js",
     "module": "node module.js",
-	"prototype": "node prototype.js"
+	"prototype": "node prototype.js",
+	"singleton": "node singleton.js"
   },
   "author": "S. M. Hasan Mansur",
   "license": "MIT"
