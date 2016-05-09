@@ -26,3 +26,4 @@ Related Links
 -------------
 * [Learning JavaScript Design Patterns] (https://addyosmani.com/resources/essentialjsdesignpatterns/book/)
 * [4 JavaScript Design Patterns You Should Know] (https://scotch.io/bar-talk/4-javascript-design-patterns-you-should-know)
+* Repo name "MindYourPattern" is inspired from [Mind Your Language](https://www.youtube.com/playlist?list=PLxRxwnkeaHZv5JEKUyrQFPQbVuGVvo6hh), a famous  British comedy television series. 
