@@ -6,7 +6,8 @@
     "constructor": "node constructor.js",
     "module": "node module.js",
 	"prototype": "node prototype.js",
-	"singleton": "node singleton.js"
+	"singleton": "node singleton.js",
+	"observer": "node observer.js"
   },
   "author": "S. M. Hasan Mansur",
   "license": "MIT"
