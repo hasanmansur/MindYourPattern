@@ -1,7 +1,11 @@
-var fs = require("fs");
-var data = fs.readFileSync("./txt/observer.txt");
-console.log(data.toString());
-console.log("-------------------------------------------------OUTPUT------------------------------------------------");
+/*
+---------------------------------------- Observer Pattern --------------------------------------------
+The Observer is a design pattern where an object (known as a subject) maintains a list of objects 
+depending on it (observers), automatically notifying them of any changes to state.
+
+Subject: maintains a list of observers, facilitates adding or removing observers
+Observer: provides a update interface for objects that need to be notified of a Subject's changes of state
+*/
 
 var subject = function () {
 	var observers = [];
@@ -41,8 +45,6 @@ var observer3 = observer();
 subject.subscribeObserver(observer1);
 subject.subscribeObserver(observer2);
 subject.subscribeObserver(observer3);
-console.log("--------- before observer removal --------------");
 subject.notifyObservers();
 subject.unsubscribeObserver(observer1);
-console.log("---------- after observer removal --------------");
 subject.notifyObservers();
