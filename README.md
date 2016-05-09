@@ -14,7 +14,7 @@ Instructions
 * Run either of the following commands:
     * node [pattern-name.js]
     * npm run [pattern-name]
-  here [pattern-name] can be any of the following:
+* [pattern-name] can be any of the following:
     * constructor
     * prototype
     * module
